@@ -1,0 +1,22 @@
+a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+hr {
+    border: 2px solid #ebebeb;
+}
+
+body {
+    background-color: #ebebeb;
+    padding-top: 7rem;
+}
+
+.selected {
+    border: 2px solid #a93226;
+}

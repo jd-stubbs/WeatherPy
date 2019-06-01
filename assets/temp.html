@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Latitude : Max Temperature</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark" style="background-color: #a93226;">
+            <a class="navbar-brand" href="../index.html" style="font-size: xx-large; font-weight: bolder">Latitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Max Temperature</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./temp.html">Max Temperature</a>
+                                <a class="dropdown-item" href="./humid.html">Humidity</a>
+                                <a class="dropdown-item" href="./clouds.html">Cloud Coverage</a>
+                                <a class="dropdown-item" href="./winds.html">Wind Speeds</a>
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./comp.html">Comparisons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title" style="font-size: xx-large; font-weight: bolder; color: #a93226">Temperature<hr></h1>
+                        <img src="./TemperatureInWorldCities.png" alt="" class="card-img">
+                        <p class="card-text">As expected, the weather becomes significantly warmer as one approaches the equator (red line). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of year this data was collected, or more likely, the lack of cities farther from the equator in the southern hemisphere due to lack of landmass.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title" style="font-size: xx-large; font-weight: bolder; color: #a93226">Visualizations<hr></h1>
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="photo-box">
+                                        <a href="./temp.html">
+                                            <img class="img-fluid selected" src="./TemperatureInWorldCities.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="photo-box">
+                                        <a href="./humid.html">
+                                            <img class="img-fluid" src="./HumidityInWorldCities.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6"><br/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="photo-box">
+                                        <a href="./clouds.html">
+                                            <img class="img-fluid" src="./CloudsInWorldCities.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="photo-box">
+                                        <a href="./winds.html">
+                                            <img class="img-fluid" src="./WindsInWorldCities.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
